@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class Communicator {
     private final int SOCKET = 6666;
-    private final String SERVER_IP = "192.168.0.109";
+    private final String SERVER_IP = "";
 
     public void send(String message){
         new SendMessageTask(SERVER_IP, SOCKET).execute(message);

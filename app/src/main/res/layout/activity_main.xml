@@ -16,8 +16,7 @@
         android:layout_alignParentTop="true"
         android:id="@+id/txt_message"
         android:hint="@string/message_hint"
-        android:inputType="textCapWords|textMultiLine"
-        />
+        android:inputType="textCapWords|textMultiLine"/>
 
     <Button
         android:layout_width="wrap_content"
