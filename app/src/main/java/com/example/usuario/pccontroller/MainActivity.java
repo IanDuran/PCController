@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton btn8;
     private ImageButton btn9;
     private ImageButton btn0;
-    private ImageButton btnEquals;
     private ImageButton btnBackspace;
     ////////////////////////////////
 
@@ -50,8 +49,6 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton btnI;
     private ImageButton btnO;
     private ImageButton btnP;
-    private ImageButton btnBracket1;
-    private ImageButton btnBracket2;
     private ImageButton btnTilde;
     ////////////////////////////
 
@@ -96,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.keyboard_layout);
+        //C:\Users\Usuario\Desktop\Bretes\Android\PCController\app\src\main\res\layout-land\keyboard_layout.xml
         c = new Communicator();
         //Initialization
         btnEscape = (ImageButton) findViewById(R.id.btn_escape);
@@ -122,7 +120,6 @@ public class MainActivity extends AppCompatActivity {
         btn8 = (ImageButton) findViewById(R.id.btn_8);
         btn9 = (ImageButton) findViewById(R.id.btn_9);
         btn0 = (ImageButton) findViewById(R.id.btn_0);
-        btnEquals = (ImageButton) findViewById(R.id.btn_equals);
         btnBackspace = (ImageButton) findViewById(R.id.btn_backspace);
 
         btnTab = (ImageButton) findViewById(R.id.btn_tab);
@@ -136,8 +133,6 @@ public class MainActivity extends AppCompatActivity {
         btnI = (ImageButton) findViewById(R.id.btn_i);
         btnO = (ImageButton) findViewById(R.id.btn_o);
         btnP = (ImageButton) findViewById(R.id.btn_p);
-        btnBracket1 = (ImageButton) findViewById(R.id.btn_bracket1);
-        btnBracket2 = (ImageButton) findViewById(R.id.btn_bracket2);
         btnTilde = (ImageButton) findViewById(R.id.btn_tilde);
 
         btnA = (ImageButton) findViewById(R.id.btn_a);
@@ -263,6 +258,7 @@ public class MainActivity extends AppCompatActivity {
                 c.send(123);
             }
         });
+        //////////////////////////////////////////////////
 
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -331,13 +327,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(48);
-            }
-        });
-
-        btnEquals.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                c.send(61);
             }
         });
 
@@ -426,24 +415,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnBracket1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                c.send(91);
-            }
-        });
-
-        btnBracket2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                c.send(93);
-            }
-        });
-
         btnTilde.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                c.send(131);
+                c.send(129);
             }
         });
         //////////////////////////////////////////////////////////////
