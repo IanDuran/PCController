@@ -19,13 +19,12 @@
 
         <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="32dp"
             android:id="@+id/btn_escape"
             android:src="@mipmap/ic_escape"
             android:background="#00000000"
             android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
-            android:size="60dp"/>
+            android:layout_marginLeft="5dp"/>
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -142,10 +141,22 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/second_row"
-        android:layout_below="@id/first_row"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_below="@+id/first_row"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:visibility="invisible"
+            android:focusable="false"
+            android:src="@mipmap/ic_z"
+            android:background="#00000000"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.35" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -249,13 +260,12 @@
 
         <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/btn_backspace"
             android:src="@mipmap/ic_backspace"
             android:background="#00000000"
             android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="0.45" />
+            android:layout_marginLeft="5dp" />
 
     </LinearLayout>
 
@@ -271,7 +281,7 @@
 
         <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="31dp"
             android:id="@+id/btn_tab"
             android:src="@mipmap/ic_tab"
             android:background="#00000000"
@@ -404,7 +414,6 @@
         android:orientation="horizontal"
         android:id="@+id/fourth_row"
         android:layout_below="@id/third_row"
-        android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:weightSum="1">
 
@@ -502,13 +511,12 @@
 
         <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:id="@+id/btn_enter"
             android:src="@mipmap/ic_enter"
             android:background="#00000000"
             android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="0.53" />
+            android:layout_marginLeft="5dp" />
 
     </LinearLayout>
 
@@ -524,13 +532,12 @@
 
         <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="28dp"
             android:id="@+id/btn_shift"
             android:src="@mipmap/ic_shift"
             android:background="#00000000"
             android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="0.53" />
+            android:layout_marginLeft="5dp" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -638,28 +645,26 @@
 
         <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="41dp"
             android:id="@+id/btn_control"
             android:src="@mipmap/ic_control"
             android:background="#00000000"
             android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="0.345" />
+            android:layout_marginLeft="5dp" />
 
 
         <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="43dp"
             android:id="@+id/btn_win_key"
             android:src="@mipmap/ic_windows_key"
             android:background="#00000000"
             android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_weight="0.176" />
+            android:layout_marginLeft="5dp" />
 
         <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="42dp"
             android:id="@+id/btn_alt"
             android:src="@mipmap/ic_alt"
             android:background="#00000000"
@@ -669,13 +674,13 @@
 
         <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/btn_space"
             android:src="@mipmap/ic_space"
             android:background="#00000000"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
-            android:layout_weight="0.345" />
+            android:layout_weight="0.17" />
 
         <ImageButton
             android:layout_width="wrap_content"
