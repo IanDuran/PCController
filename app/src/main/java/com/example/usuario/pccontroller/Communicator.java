@@ -8,11 +8,11 @@ public class Communicator {
     private final int SOCKET = 6666;
     private final String SERVER_IP = "";
 
-    public void send(String message){
-        new SendMessageTask(SERVER_IP, SOCKET).execute(message);
+    public void send(Integer keyId){
+        new SendMessageTask(SERVER_IP, SOCKET).execute(keyId);
     }
 
-    private class SendMessageTask extends AsyncTask<String, Void, Void>{
+    private class SendMessageTask extends AsyncTask<Integer, Void, Void>{
         private String ip;
         private int socketNumber;
 
@@ -22,11 +22,11 @@ public class Communicator {
         }
 
         @Override
-        protected Void doInBackground(String... strings) {
+        protected Void doInBackground(Integer... integers) {
             try{
                 Socket socket = new Socket(ip, socketNumber);
                 DataOutputStream output = new DataOutputStream(socket.getOutputStream());
-                output.writeUTF(strings[0]);
+                output.writeInt(integers[0]);
                 output.flush();
                 output.close();
                 socket.close();

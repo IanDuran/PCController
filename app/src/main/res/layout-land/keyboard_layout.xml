@@ -537,7 +537,8 @@
             android:src="@mipmap/ic_shift"
             android:background="#00000000"
             android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.14" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -637,10 +638,10 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/sixth_row"
+        android:weightSum="1"
         android:layout_below="@+id/fifth_row"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:weightSum="1">
+        android:layout_alignParentStart="true">
 
 
         <ImageButton
@@ -650,7 +651,8 @@
             android:src="@mipmap/ic_control"
             android:background="#00000000"
             android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.175" />
 
 
         <ImageButton
@@ -660,7 +662,8 @@
             android:src="@mipmap/ic_windows_key"
             android:background="#00000000"
             android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.065" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -670,7 +673,7 @@
             android:background="#00000000"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
-            />
+            android:layout_weight="0.056" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -680,18 +683,7 @@
             android:background="#00000000"
             android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
-            android:layout_weight="0.17" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="false"
-            android:visibility="invisible"
-            android:focusable="false"
-            android:src="@mipmap/ic_z"
-            android:background="#00000000"
-            android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"/>
+            android:layout_weight="0.25" />
 
         <ImageButton
             android:layout_width="wrap_content"
