@@ -1,5 +1,8 @@
 package com.example.usuario.pccontroller;
 
+import android.content.Context;
+import android.os.Handler;
+import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -93,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.keyboard_layout);
-        //C:\Users\Usuario\Desktop\Bretes\Android\PCController\app\src\main\res\layout-land\keyboard_layout.xml
+        final Vibrator vibrator = (Vibrator)this.getSystemService(Context.VIBRATOR_SERVICE);
         c = new Communicator();
         //Initialization
         btnEscape = (ImageButton) findViewById(R.id.btn_escape);
@@ -172,6 +175,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(27);
+                vibrator.vibrate(100);
             }
         });
 
@@ -179,6 +183,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(112);
+                vibrator.vibrate(100);
             }
         });
 
@@ -186,6 +191,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(113);
+                vibrator.vibrate(100);
             }
         });
 
@@ -193,6 +199,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(114);
+                vibrator.vibrate(100);
             }
         });
 
@@ -200,6 +207,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(115);
+                vibrator.vibrate(100);
             }
         });
 
@@ -207,6 +215,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(116);
+                vibrator.vibrate(100);
             }
         });
 
@@ -214,6 +223,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(117);
+                vibrator.vibrate(100);
             }
         });
 
@@ -221,6 +231,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(118);
+                vibrator.vibrate(100);
             }
         });
 
@@ -228,6 +239,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(119);
+                vibrator.vibrate(100);
             }
         });
 
@@ -235,6 +247,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(120);
+                vibrator.vibrate(100);
             }
         });
 
@@ -242,6 +255,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(121);
+                vibrator.vibrate(100);
             }
         });
 
@@ -249,6 +263,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(122);
+                vibrator.vibrate(100);
             }
         });
 
@@ -256,6 +271,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(123);
+                vibrator.vibrate(100);
             }
         });
         //////////////////////////////////////////////////
@@ -264,6 +280,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(49);
+                vibrator.vibrate(100);
             }
         });
 
@@ -271,6 +288,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(50);
+                vibrator.vibrate(100);
             }
         });
 
@@ -278,6 +296,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(51);
+                vibrator.vibrate(100);
             }
         });
 
@@ -285,6 +304,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(52);
+                vibrator.vibrate(100);
             }
         });
 
@@ -292,6 +312,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(53);
+                vibrator.vibrate(100);
             }
         });
 
@@ -299,6 +320,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(54);
+                vibrator.vibrate(100);
             }
         });
 
@@ -306,6 +328,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(55);
+                vibrator.vibrate(100);
             }
         });
 
@@ -313,6 +336,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(56);
+                vibrator.vibrate(100);
             }
         });
 
@@ -320,6 +344,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(57);
+                vibrator.vibrate(100);
             }
         });
 
@@ -327,6 +352,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(48);
+                vibrator.vibrate(100);
             }
         });
 
@@ -334,6 +360,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(8);
+                vibrator.vibrate(100);
             }
         });
         //////////////////////////////////////////////////////
@@ -342,6 +369,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(9);
+                vibrator.vibrate(100);
             }
         });
 
@@ -349,6 +377,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(81);
+                vibrator.vibrate(100);
             }
         });
 
@@ -356,6 +385,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(87);
+                vibrator.vibrate(100);
             }
         });
 
@@ -363,6 +393,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(69);
+                vibrator.vibrate(100);
             }
         });
 
@@ -370,6 +401,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(82);
+                vibrator.vibrate(100);
             }
         });
 
@@ -377,6 +409,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(84);
+                vibrator.vibrate(100);
             }
         });
 
@@ -384,6 +417,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(89);
+                vibrator.vibrate(100);
             }
         });
 
@@ -391,6 +425,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(85);
+                vibrator.vibrate(100);
             }
         });
 
@@ -398,6 +433,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(73);
+                vibrator.vibrate(100);
             }
         });
 
@@ -405,6 +441,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(79);
+                vibrator.vibrate(100);
             }
         });
 
@@ -412,6 +449,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(80);
+                vibrator.vibrate(100);
             }
         });
 
@@ -419,6 +457,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(129);
+                vibrator.vibrate(100);
             }
         });
         //////////////////////////////////////////////////////////////
@@ -427,6 +466,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(65);
+                vibrator.vibrate(100);
             }
         });
 
@@ -434,6 +474,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(83);
+                vibrator.vibrate(100);
             }
         });
 
@@ -441,6 +482,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(68);
+                vibrator.vibrate(100);
             }
         });
 
@@ -448,6 +490,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(70);
+                vibrator.vibrate(100);
             }
         });
 
@@ -455,6 +498,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(71);
+                vibrator.vibrate(100);
             }
         });
 
@@ -462,6 +506,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(72);
+                vibrator.vibrate(100);
             }
         });
 
@@ -469,6 +514,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(74);
+                vibrator.vibrate(100);
             }
         });
 
@@ -476,6 +522,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(75);
+                vibrator.vibrate(100);
             }
         });
 
@@ -483,6 +530,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(76);
+                vibrator.vibrate(100);
             }
         });
 
@@ -490,6 +538,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(10);
+                vibrator.vibrate(100);
             }
         });
         /////////////////////////////////////////////
@@ -498,6 +547,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(16);
+                vibrator.vibrate(100);
             }
         });
 
@@ -505,6 +555,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(90);
+                vibrator.vibrate(100);
             }
         });
 
@@ -512,6 +563,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(88);
+                vibrator.vibrate(100);
             }
         });
 
@@ -519,6 +571,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(67);
+                vibrator.vibrate(100);
             }
         });
 
@@ -526,6 +579,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(86);
+                vibrator.vibrate(100);
             }
         });
 
@@ -533,6 +587,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(66);
+                vibrator.vibrate(100);
             }
         });
 
@@ -540,6 +595,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(78);
+                vibrator.vibrate(100);
             }
         });
 
@@ -547,6 +603,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(77);
+                vibrator.vibrate(100);
             }
         });
 
@@ -554,6 +611,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(44);
+                vibrator.vibrate(100);
             }
         });
 
@@ -561,6 +619,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(46);
+                vibrator.vibrate(100);
             }
         });
 
@@ -568,6 +627,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(38);
+                vibrator.vibrate(100);
             }
         });
         /////////////////////////////////////////////////
@@ -576,6 +636,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(17);
+                vibrator.vibrate(100);
             }
         });
 
@@ -583,6 +644,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(524);
+                vibrator.vibrate(100);
             }
         });
 
@@ -590,6 +652,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(18);
+                vibrator.vibrate(100);
             }
         });
 
@@ -597,6 +660,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(32);
+                vibrator.vibrate(100);
             }
         });
 
@@ -604,6 +668,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(37);
+                vibrator.vibrate(100);
             }
         });
 
@@ -611,6 +676,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(40);
+                vibrator.vibrate(100);
             }
         });
 
@@ -618,6 +684,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 c.send(39);
+                vibrator.vibrate(100);
             }
         });
     }
