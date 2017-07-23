@@ -1,11 +1,9 @@
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:keyWidth="10%p"
-    android:horizontalGap="0px"
-    android:verticalGap="0px"
-    android:keyHeight="60dp"
+    android:horizontalGap="5px"
+    android:verticalGap="5px"
     >
 
-    <Row android:rowEdgeFlags="top">
+    <Row android:keyHeight="12%p" android:keyWidth="8%p" android:rowEdgeFlags="top">
         <Key android:codes="27" android:keyLabel="Esc" android:keyEdgeFlags="left"/>
         <Key android:codes="112" android:keyLabel="F1"/>
         <Key android:codes="113" android:keyLabel="F2"/>
@@ -21,7 +19,7 @@
         <Key android:codes="123" android:keyLabel="F12" android:keyEdgeFlags="right"/>
     </Row>
 
-    <Row>
+    <Row android:keyHeight="16.6666667%p" android:keyWidth="9.09090909%p">
         <Key android:codes="49" android:keyLabel="1" android:keyEdgeFlags="left"/>
         <Key android:codes="50" android:keyLabel="2"/>
         <Key android:codes="51" android:keyLabel="3"/>
@@ -32,10 +30,10 @@
         <Key android:codes="56" android:keyLabel="8"/>
         <Key android:codes="57" android:keyLabel="9"/>
         <Key android:codes="48" android:keyLabel="0"/>
-        <Key android:codes="8" android:keyLabel="Bksp" android:keyEdgeFlags="right"/>
+        <Key android:codes="8" android:keyLabel="Bksp" android:keyEdgeFlags="right" android:keyWidth="18.1818182%p"/>
     </Row>
-    <Row>
-        <Key android:codes="9" android:keyLabel="Tab" android:keyEdgeFlags="left"/>
+    <Row android:keyHeight="16.6666667%p" android:keyWidth="8.33333333%p">
+        <Key android:codes="9" android:keyLabel="Tab" android:keyEdgeFlags="left" android:keyWidth="16.6666667%p"/>
         <Key android:codes="81" android:keyLabel="q"/>
         <Key android:codes="87" android:keyLabel="w"/>
         <Key android:codes="69" android:keyLabel="e"/>
@@ -48,7 +46,7 @@
         <Key android:codes="80" android:keyLabel="p"/>
         <Key android:codes="129" android:keyLabel="´" android:keyEdgeFlags="right"/>
     </Row>
-    <Row>
+    <Row android:keyHeight="16.6666667%p" android:keyWidth="10%p">
         <Key android:codes="65" android:keyLabel="a" android:keyEdgeFlags="left"/>
         <Key android:codes="83" android:keyLabel="s"/>
         <Key android:codes="68" android:keyLabel="d"/>
@@ -58,10 +56,10 @@
         <Key android:codes="74" android:keyLabel="j"/>
         <Key android:codes="75" android:keyLabel="k"/>
         <Key android:codes="76" android:keyLabel="l"/>
-        <Key android:codes="10" android:keyLabel="Enter" android:keyEdgeFlags="right"/>
+        <Key android:codes="10" android:keyLabel="Enter" android:keyEdgeFlags="right" android:keyWidth="20%p"/>
     </Row>
-    <Row>
-        <Key android:codes="16" android:keyLabel="CAPS" android:keyEdgeFlags="left"/>
+    <Row android:keyHeight="16.6666667%p" android:keyWidth="9.09090909%p">
+        <Key android:codes="16" android:keyLabel="CAPS" android:keyEdgeFlags="left" android:keyWidth="18.1818182%p"/>
         <Key android:codes="90" android:keyLabel="z"/>
         <Key android:codes="88" android:keyLabel="x"/>
         <Key android:codes="67" android:keyLabel="c"/>
@@ -71,13 +69,13 @@
         <Key android:codes="77" android:keyLabel="m"/>
         <Key android:codes="44" android:keyLabel=","/>
         <Key android:codes="46" android:keyLabel="."/>
-        <Key android:codes="38" android:keyLabel="↑" android:isRepeatable="true" android:keyEdgeFlags="right"/>
+        <Key android:codes="38" android:keyLabel="↑" android:isRepeatable="true" android:layout_marginLeft="24dp" android:keyEdgeFlags="right"/>
     </Row>
-    <Row android:rowEdgeFlags="bottom">
+    <Row android:keyHeight="16.6666667%p" android:keyWidth="14.2857143%p" android:rowEdgeFlags="bottom">
         <Key android:codes="17" android:keyLabel="Ctrl" android:keyEdgeFlags="left"/>
         <Key android:codes="524" android:keyLabel="Win"/>
         <Key android:codes="18" android:keyLabel="Alt"/>
-        <Key android:codes="32" android:keyLabel="Space"/>
+        <Key android:codes="32" android:keyLabel="Space" android:keyWidth="57.1428571%p"/>
         <Key android:codes="37" android:keyLabel="←" android:isRepeatable="true"/>
         <Key android:codes="40" android:keyLabel="↓" android:isRepeatable="true"/>
         <Key android:codes="39" android:keyLabel="→" android:isRepeatable="true" android:keyEdgeFlags="right"/>
