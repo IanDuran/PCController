@@ -4,6 +4,8 @@ import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.WindowManager;
 
 public class KeyboardActivity extends AppCompatActivity {
 
@@ -14,6 +16,8 @@ public class KeyboardActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.custom_keyboard_layout);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        this.getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
         keyboard = new Keyboard(this, R.xml.qwerty);
         keyboardView = (KeyboardView)findViewById(R.id.custom_keyboard);
         keyboardView.setKeyboard(keyboard);
