@@ -1,7 +1,10 @@
+package com.example.usuario.pccontroller;
+
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.view.View;
+
 
 /**
  * Created by Usuario on 22/7/2017.
@@ -10,9 +13,11 @@ import android.view.View;
 public class CustomKeyboard extends InputMethodService implements KeyboardView.OnKeyboardActionListener {
     private KeyboardView keyboardView;
     private Keyboard keyboard;
+    private Communicator communicator;
 
     @Override
     public View onCreateInputView() {
+        communicator = new Communicator();
         return super.onCreateInputView();
     }
 
