@@ -19,7 +19,6 @@
         <Key android:codes="121" android:keyLabel="F10"/>
         <Key android:codes="122" android:keyLabel="F11"/>
         <Key android:codes="123" android:keyLabel="F12" android:keyEdgeFlags="right"/>
-
     </Row>
 
     <Row>
@@ -72,7 +71,7 @@
         <Key android:codes="77" android:keyLabel="m"/>
         <Key android:codes="44" android:keyLabel=","/>
         <Key android:codes="46" android:keyLabel="."/>
-        <Key android:codes="38" android:keyLabel="↑" android:keyEdgeFlags="right"/>
+        <Key android:codes="38" android:keyLabel="↑" android:isRepeatable="true" android:keyEdgeFlags="right"/>
     </Row>
     <Row android:rowEdgeFlags="bottom">
         <Key android:codes="17" android:keyLabel="Ctrl" android:keyEdgeFlags="left"/>
