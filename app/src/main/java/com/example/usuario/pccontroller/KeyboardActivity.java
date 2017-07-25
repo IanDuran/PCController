@@ -26,6 +26,6 @@ public class KeyboardActivity extends AppCompatActivity {
         keyboard = new Keyboard(this, R.xml.qwerty);
         keyboardView = (KeyboardView)findViewById(R.id.custom_keyboard);
         keyboardView.setKeyboard(keyboard);
-        keyboardView.setOnKeyboardActionListener(new CustomKeyboard());
+        keyboardView.setOnKeyboardActionListener(new CustomKeyboard(keyboard, keyboardView));
     }
 }

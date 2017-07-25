@@ -11,8 +11,9 @@
         android:keyPreviewLayout="@layout/preview"
         android:layout_marginBottom="5dp"
         android:layout_marginTop="5dp"
-        android:keyBackground="@color/colorDarkGray"
-        android:keyTextColor="@color/colorGray"
+        android:background="@color/colorGap"
+        android:keyBackground="@color/colorKeyBackground"
+        android:keyTextColor="@color/colorKeyText"
         />
 
 </RelativeLayout>
