@@ -31,7 +31,7 @@ public class CustomKeyboard implements KeyboardView.OnKeyboardActionListener {
 
     @Override
     public void onKey(int i, int[] ints) {
-        if(i == 16){
+        if(i == 16 || caps){
             caps = !caps;
             this.keyboard.setShifted(caps);
             this.keyboardView.invalidateAllKeys();
