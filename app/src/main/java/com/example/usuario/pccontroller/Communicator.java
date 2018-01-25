@@ -12,7 +12,7 @@ public class Communicator {
         new SendMessageTask(SERVER_IP, SOCKET).execute(keyId);
     }
 
-    private class SendMessageTask extends AsyncTask<Integer, Void, Void>{
+    private static class SendMessageTask extends AsyncTask<Integer, Void, Void>{
         private String ip;
         private int socketNumber;
 
